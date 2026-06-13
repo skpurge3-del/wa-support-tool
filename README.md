@@ -1,3 +1,5 @@
+![DEV Cifer](Banner.jpg)
+
 # WA SUPPORT TOOL
 
 Outil WhatsApp pour signalement (Ban) et appel de déban (Unban).
