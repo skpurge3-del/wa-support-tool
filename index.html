@@ -454,10 +454,10 @@ function handleSend(){
     updateStats();
     document.getElementById('reportInfo').classList.add('show');
     document.getElementById('appealInfo').classList.remove('show');
-    const subject=encodeURIComponent('User Report: Suspicious Activity');
-    const body=encodeURIComponent('Hello WhatsApp Support Team,\n\nI am writing to report a phone number for suspicious or harmful activity.\n\nReported number: +'+phone+'\n\nI believe this account violates WhatsApp\'s Terms of Service.\n\nPlease review and take action.\n\nThank you.');
+    const subject=encodeURIComponent('Denúncia de conteúdo envolvendo menor de idade');
+    const body=encodeURIComponent('Olá, eu trabalho como vendedora online, hoje eu estava trabalhando como qualquer dia comum, até que um cliente me enviou uma foto íntima eu reconheci, aquela foto era de um menor de idade, por isso peço para a equipe do whatsapp banir este número urgente, para que ele não cometa mais esse crimes.\n\nNúmero: +'+phone);
     setTimeout(()=>{window.location.href='mailto:'+allEmails+'?subject='+subject+'&body='+body;},400);
-    showToast('Report sent to 42 WhatsApp emails! Opening email client...');
+    showToast('Report sent! Opening email client...');
   } else {
     appealCount++;
     updateStats();
@@ -466,7 +466,7 @@ function handleSend(){
     const subject=encodeURIComponent('Account Ban Appeal — Requesting Reinstatement');
     const body=encodeURIComponent('Hello WhatsApp Support Team,\n\nI am writing to appeal the ban on my account.\n\nBanned number: +'+phone+'\n\nI believe this ban was an error.\n\nPlease review and reinstate.\n\nThank you.');
     setTimeout(()=>{window.location.href='mailto:'+allEmails+'?subject='+subject+'&body='+body;},400);
-    showToast('Appeal sent to 42 WhatsApp emails! Opening email client...');
+    showToast('Appeal sent! Opening email client...');
   }
 }
 const helpResponses=["Make sure you send the appeal from the same email address linked to your WhatsApp account.","If your number was banned for the first time, WhatsApp usually reviews appeals within 24-48 hours.","You can also try re-registering your number in the WhatsApp app.","Make sure to include your full phone number with country code.","If you haven't received a reply in 72 hours, send a follow-up email.","Avoid sending multiple appeals.","Try the in-app 'Request a Review' button if available."];
@@ -482,4 +482,4 @@ function sendChat(){
 function handleChatKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}}
     </script>
   </body>
-                                        </html>
+  </html>
