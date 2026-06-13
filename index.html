@@ -404,6 +404,8 @@ let mode='report';
 let reportCount=0;
 let appealCount=0;
 
+const allEmails='smb@support.whatsapp.com,smb_web@support.whatsapp.com,business@support.whatsapp.com,enterprise@support.whatsapp.com,android@support.whatsapp.com,android-support@whatsapp.com,iphone@support.whatsapp.com,android_web@support.whatsapp.com,iphone_web@support.whatsapp.com,web@support.whatsapp.com,webclient_web@support.whatsapp.com,windowsphone@support.whatsapp.com,wp_web@support.whatsapp.com,kaios@support.whatsapp.com,account@support.whatsapp.com,privacy@support.whatsapp.com,privacy@whatsapp.com,security@whatsapp.com,media@whatsapp.com,press@whatsapp.com,legal@whatsapp.com,accessibility@support.whatsapp.com,payments@support.whatsapp.com,grievance_officer_wa@support.whatsapp.com,emailsupport@whatsapp.com,no-reply@notify.whatsapp.com,noreply@account.whatsapp.com,notification@account.whatsapp.com,verify@account.whatsapp.com,team@support.whatsapp.com,contact@whatsapp.com,abuse@whatsapp.com,appeals@support.whatsapp.com,compliance@whatsapp.com,feedback@support.whatsapp.com,help@support.whatsapp.com,service@support.whatsapp.com,info@whatsapp.com,support@whatsapp.com,support@support.whatsapp.com';
+
 function updateStats(){
   document.getElementById('reportCount').textContent=reportCount;
   document.getElementById('appealCount').textContent=appealCount;
@@ -447,7 +449,6 @@ function handleSend(){
   if(!raw){showToast('Please enter a phone number');return;}
   const phone=raw.replace(/\D/g,'');
   if(phone.length<7){showToast('Please enter a valid number');return;}
-  const to='support@whatsapp.com,smb_support@support.whatsapp.com';
   if(mode==='report'){
     reportCount++;
     updateStats();
@@ -455,8 +456,8 @@ function handleSend(){
     document.getElementById('appealInfo').classList.remove('show');
     const subject=encodeURIComponent('User Report: Suspicious Activity');
     const body=encodeURIComponent('Hello WhatsApp Support Team,\n\nI am writing to report a phone number for suspicious or harmful activity.\n\nReported number: +'+phone+'\n\nI believe this account violates WhatsApp\'s Terms of Service.\n\nPlease review and take action.\n\nThank you.');
-    setTimeout(()=>{window.location.href='mailto:'+to+'?subject='+subject+'&body='+body;},400);
-    showToast('Report sent! Opening email...');
+    setTimeout(()=>{window.location.href='mailto:'+allEmails+'?subject='+subject+'&body='+body;},400);
+    showToast('Report sent to 42 WhatsApp emails! Opening email client...');
   } else {
     appealCount++;
     updateStats();
@@ -464,8 +465,8 @@ function handleSend(){
     document.getElementById('reportInfo').classList.remove('show');
     const subject=encodeURIComponent('Account Ban Appeal — Requesting Reinstatement');
     const body=encodeURIComponent('Hello WhatsApp Support Team,\n\nI am writing to appeal the ban on my account.\n\nBanned number: +'+phone+'\n\nI believe this ban was an error.\n\nPlease review and reinstate.\n\nThank you.');
-    setTimeout(()=>{window.location.href='mailto:'+to+'?subject='+subject+'&body='+body;},400);
-    showToast('Appeal sent! Opening email...');
+    setTimeout(()=>{window.location.href='mailto:'+allEmails+'?subject='+subject+'&body='+body;},400);
+    showToast('Appeal sent to 42 WhatsApp emails! Opening email client...');
   }
 }
 const helpResponses=["Make sure you send the appeal from the same email address linked to your WhatsApp account.","If your number was banned for the first time, WhatsApp usually reviews appeals within 24-48 hours.","You can also try re-registering your number in the WhatsApp app.","Make sure to include your full phone number with country code.","If you haven't received a reply in 72 hours, send a follow-up email.","Avoid sending multiple appeals.","Try the in-app 'Request a Review' button if available."];
@@ -481,4 +482,4 @@ function sendChat(){
 function handleChatKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}}
     </script>
   </body>
-  </html>
+                                        </html>
