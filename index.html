@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>
-      WA SUPPORT TOOL
-    </title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Rajdhani:wght@500;600;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet" />
+    <title>WA SUPPORT TOOL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
       :root{
@@ -37,7 +35,6 @@ body{
 ::-webkit-scrollbar{width:3px}
 ::-webkit-scrollbar-thumb{background:var(--theme);border-radius:2px}
 
-/* ─── TOPBAR ─── */
 .topbar{
   position:sticky;top:0;z-index:100;
   background:rgba(8,9,13,0.95);
@@ -60,7 +57,6 @@ body{
 .topbar-name{font-family:'Orbitron',monospace;font-size:12px;font-weight:700;color:var(--theme);letter-spacing:1px}
 .topbar-sub{font-size:10px;color:var(--muted);font-family:'Share Tech Mono',monospace}
 
-/* ─── MENU BTN ─── */
 .menu-btn{
   width:38px;height:38px;border-radius:9px;
   background:rgba(255,255,255,0.05);
@@ -71,7 +67,6 @@ body{
 }
 .menu-btn:hover{background:rgba(255,255,255,0.1);border-color:var(--theme);color:var(--theme)}
 
-/* ─── DRAWER ─── */
 .drawer-overlay{
   position:fixed;inset:0;z-index:200;
   background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);
@@ -119,7 +114,6 @@ body{
   color:var(--muted);text-align:center;line-height:1.6;
 }
 
-/* ─── HERO ─── */
 .hero-wrap{
   margin:14px 14px 0;border-radius:18px;overflow:hidden;
   position:relative;box-shadow:0 8px 40px rgba(0,0,0,.6);
@@ -156,7 +150,6 @@ body{
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
 .hero-tag{font-size:12px;color:rgba(255,255,255,.4);font-family:'Share Tech Mono',monospace}
 
-/* ─── TOGGLE ─── */
 .toggle-wrap{
   display:flex;margin:14px 14px 12px;
   border-radius:13px;overflow:hidden;
@@ -171,12 +164,11 @@ body{
   text-transform:uppercase;background:none;
   display:flex;align-items:center;justify-content:center;gap:7px;
 }
-.t-btn.report{color:#ff3340}
-.t-btn.appeal{color:#33d972;border-left:1px solid rgba(255,255,255,0.06)}
+.t-btn.report{color:#ff4444}
+.t-btn.appeal{color:#44ff44;border-left:1px solid rgba(255,255,255,0.06)}
 .t-btn.report.active{background:linear-gradient(135deg,#e8000d,#9a0008);color:#fff;box-shadow:0 0 24px rgba(232,0,13,.35)}
 .t-btn.appeal.active{background:linear-gradient(135deg,#00c853,#006b2c);color:#fff;box-shadow:0 0 24px rgba(0,200,83,.35)}
 
-/* ─── CARD ─── */
 .main-card{
   background:var(--card);border:1px solid var(--border);
   border-radius:18px;margin:0 14px 12px;
@@ -196,7 +188,6 @@ body{
 .card-title i{color:var(--theme);font-size:14px}
 .card-desc{font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.5}
 
-/* ─── INPUT ─── */
 .input-group{display:flex;gap:8px;align-items:center}
 .phone-wrap{
   flex:1;background:rgba(255,255,255,0.04);
@@ -225,7 +216,6 @@ body{
 .action-btn:hover{transform:scale(1.04);box-shadow:0 4px 24px var(--glow)}
 .action-btn i{font-size:14px}
 
-/* ─── INFO BOX ─── */
 .info-box{
   display:none;margin-top:12px;padding:12px 14px;
   border-radius:10px;font-size:12px;line-height:1.6;
@@ -237,7 +227,6 @@ body{
 .info-box strong{display:block;margin-bottom:4px;font-size:13px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
-/* ─── DIVIDER ─── */
 .divider{
   display:flex;align-items:center;gap:10px;
   padding:8px 16px;margin:0 14px;
@@ -245,7 +234,6 @@ body{
 .div-line{flex:1;height:1px;background:var(--border)}
 .div-lbl{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
 
-/* ─── HELP CARD (unban chat) ─── */
 .help-card{
   background:var(--card);border:1px solid var(--border);
   border-radius:18px;margin:0 14px 12px;overflow:hidden;
@@ -299,7 +287,6 @@ body{
 }
 .chat-send:hover{transform:scale(1.08)}
 
-/* ─── STATS ─── */
 .sec-lbl{
   margin:0 14px 8px;display:flex;align-items:center;gap:8px;
 }
@@ -318,7 +305,6 @@ body{
 .sbn{font-family:'Orbitron',monospace;font-size:24px;font-weight:900;line-height:1;color:var(--text)}
 .sbl{font-size:11px;color:var(--muted);line-height:1.3}
 
-/* ─── FOOTER ─── */
 .footer{
   text-align:center;padding:24px 16px;
   font-family:'Share Tech Mono',monospace;font-size:10px;
@@ -327,11 +313,9 @@ body{
 }
 .footer span{color:var(--theme);font-weight:700}
 
-/* ─── SCROLL REVEAL ─── */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
 .rv.on{opacity:1;transform:translateY(0)}
 
-/* ─── TOAST ─── */
 .toast{
   position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(60px);
   background:#1a1d28;border:1px solid var(--border);
@@ -346,258 +330,90 @@ body{
   </head>
   <body>
     <div style="max-width:480px;margin:0 auto;padding-bottom:60px">
-      <!-- TOPBAR -->
       <div class="topbar">
         <div class="topbar-left">
-          <div class="topbar-icon">
-            <i class="fab fa-whatsapp"></i>
-          </div>
+          <div class="topbar-icon"><i class="fab fa-whatsapp"></i></div>
           <div>
-            <div class="topbar-name">
-              •DEV 𝑪𝒊𝒇𝒆𝒓•
-            </div>
-            <div class="topbar-sub">
-              WhatsApp Support Tool
-            </div>
+            <div class="topbar-name">•DEV 𝑪𝒊𝒇𝒆𝒓•</div>
+            <div class="topbar-sub">WhatsApp Support Tool</div>
           </div>
         </div>
-        <button class="menu-btn" onclick="openMenu()" aria-label="Menu">
-          <i class="fas fa-bars"></i>
-        </button>
+        <button class="menu-btn" onclick="openMenu()" aria-label="Menu"><i class="fas fa-bars"></i></button>
       </div>
-      <!-- DRAWER OVERLAY -->
-      <div class="drawer-overlay" id="overlay" onclick="closeMenu()">
-      </div>
+      <div class="drawer-overlay" id="overlay" onclick="closeMenu()"></div>
       <div class="drawer" id="drawer">
-        <div class="drawer-head">
-          <i class="fas fa-satellite-dish"></i>
-          LINKS
-          <button class="drawer-close" onclick="closeMenu()">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <a class="drawer-link dl-tg" href="https://t.me/Cvrisyvnis" target="_blank" rel="noopener">        <i class="fab fa-telegram"></i>
-        Telegram
-</a>
-        <a class="drawer-link dl-yt" href="https://youtube.com/@titanabel?si=BvTzIaLM1bMVj7a0" target="_blank" rel="noopener">        <i class="fab fa-youtube"></i>
-        YouTube Channel
-</a>
-        <div class="drawer-footer">
-          CREATED BY
-          <span style="color:var(--theme)">          DEV 𝑪𝒊𝒇𝒆𝒓
-</span>
-          <br />
-          WhatsApp Support Tool v1.0
-        </div>
+        <div class="drawer-head"><i class="fas fa-satellite-dish"></i> LINKS <button class="drawer-close" onclick="closeMenu()"><i class="fas fa-times"></i></button></div>
+        <a class="drawer-link dl-tg" href="https://t.me/Cvrisyvnis" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram</a>
+        <a class="drawer-link dl-yt" href="https://youtube.com/@titanabel?si=BvTzIaLM1bMVj7a0" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube Channel</a>
+        <div class="drawer-footer">CREATED BY <span style="color:var(--theme)">DEV 𝑪𝒊𝒇𝒆𝒓</span><br />WhatsApp Support Tool v1.0</div>
       </div>
-      <!-- HERO IMAGE -->
       <div class="hero-wrap rv">
         <img src="Banner.jpg" alt="DEV Cifer" onerror="this.style.background='#1a1c22';this.style.minHeight='210px'" />
-        <div class="hero-ov">
-        </div>
-        <div class="hero-badge">
-          WA SUPPORT
-        </div>
+        <div class="hero-ov"></div>
+        <div class="hero-badge">WA SUPPORT</div>
         <div class="hero-content">
-          <div class="hero-name">
-            <div class="hero-dot">
-            </div>
-            WA SUPPORT TOOL
-          </div>
-          <div class="hero-tag">
-            BAN & UNBAN • DEV 𝑪𝒊𝒇𝒆𝒓
-          </div>
+          <div class="hero-name"><div class="hero-dot"></div>WA SUPPORT TOOL</div>
+          <div class="hero-tag">BAN & UNBAN • DEV 𝑪𝒊𝒇𝒆𝒓</div>
         </div>
       </div>
-      <!-- TOGGLE -->
       <div class="toggle-wrap rv">
-        <button class="t-btn report active" id="reportBtn" onclick="setMode('report')">
-          <i class="fas fa-flag"></i>
-          BAN
-        </button>
-        <button class="t-btn appeal" id="appealBtn" onclick="setMode('appeal')">
-          <i class="fas fa-shield-halved"></i>
-          UNBAN
-        </button>
+        <button class="t-btn report active" id="reportBtn" onclick="setMode('report')"><i class="fas fa-flag"></i> BAN</button>
+        <button class="t-btn appeal" id="appealBtn" onclick="setMode('appeal')"><i class="fas fa-shield-halved"></i> UNBAN</button>
       </div>
-      <!-- MAIN CARD -->
       <div class="main-card rv">
         <div class="card-inner">
-          <div class="card-title" id="cardTitle">
-            <i class="fas fa-flag"></i>
-            Report a Number
-          </div>
-          <p class="card-desc" id="cardDesc">
-            Enter the number you want to report to WhatsApp. A genuine report email will be sent to WhatsApp support.
-          </p>
+          <div class="card-title" id="cardTitle"><i class="fas fa-flag"></i> Report a Number</div>
+          <p class="card-desc" id="cardDesc">Enter the number you want to report to WhatsApp. A genuine report email will be sent to WhatsApp support.</p>
           <div class="input-group">
-            <div class="phone-wrap">
-              <span class="pfx">              +
-</span>
-              <input type="tel" id="phoneInput" class="phone-input" placeholder="509 XX XX XX XX" />
-            </div>
-            <button class="action-btn" id="actionBtn" onclick="handleSend()">
-              <i class="fas fa-paper-plane" id="btnIcon"></i>
-              <span id="btnLabel">              SEND
-</span>
-            </button>
+            <div class="phone-wrap"><span class="pfx">+</span><input type="tel" id="phoneInput" class="phone-input" placeholder="509 XX XX XX XX" /></div>
+            <button class="action-btn" id="actionBtn" onclick="handleSend()"><i class="fas fa-paper-plane" id="btnIcon"></i><span id="btnLabel">SEND</span></button>
           </div>
-          <div class="info-box report-info" id="reportInfo">
-            <strong>            <i class="fas fa-circle-info" style="color:#ff3340;margin-right:6px"></i>
-            Report Sent
-</strong>
-            Your report has been sent to WhatsApp support. They will review it within 24–72 hours. This is a legitimate report and will be handled by Meta's team.
-          </div>
-          <div class="info-box appeal-info" id="appealInfo">
-            <strong>            <i class="fas fa-circle-check" style="color:#00c853;margin-right:6px"></i>
-            Appeal Submitted
-</strong>
-            Your unban appeal has been sent to WhatsApp support. Make sure to check your email for their response. Response time is typically 24–48 hours.
-          </div>
+          <div class="info-box report-info" id="reportInfo"><strong><i class="fas fa-circle-info" style="color:#ff3340;margin-right:6px"></i>Report Sent</strong>Your report has been sent to WhatsApp support. They will review it within 24–72 hours.</div>
+          <div class="info-box appeal-info" id="appealInfo"><strong><i class="fas fa-circle-check" style="color:#00c853;margin-right:6px"></i>Appeal Submitted</strong>Your unban appeal has been sent to WhatsApp support. Response time is typically 24–48 hours.</div>
         </div>
       </div>
-      <!-- DIVIDER (only for appeal mode) -->
-      <div class="divider rv" id="helpDivider" style="display:none">
-        <div class="div-line">
-        </div>
-        <div class="div-lbl">
-          Need Help?
-        </div>
-        <div class="div-line">
-        </div>
-      </div>
-      <!-- HELP / CHAT CARD (only for appeal mode) -->
+      <div class="divider rv" id="helpDivider" style="display:none"><div class="div-line"></div><div class="div-lbl">Need Help?</div><div class="div-line"></div></div>
       <div class="help-card rv" id="helpCard" style="display:none">
         <div class="help-inner">
-          <div class="help-title">
-            <i class="fas fa-message"></i>
-            Ask for Help  Unban Support
-          </div>
-          <div class="chat-area" id="chatArea">
-            <div class="chat-msg bot">
-              Hello! I'm here to help you recover your WhatsApp account. Tell me your issue and I'll guide you step by step.
-            </div>
-          </div>
-          <div class="chat-input-row">
-            <textarea class="chat-input" id="chatInput" rows="1" placeholder="Describe your issue..." onkeydown="handleChatKey(event)">
-            </textarea>
-            <button class="chat-send" onclick="sendChat()">
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </div>
+          <div class="help-title"><i class="fas fa-message"></i> Ask for Help - Unban Support</div>
+          <div class="chat-area" id="chatArea"><div class="chat-msg bot">Hello! I'm here to help you recover your WhatsApp account. Tell me your issue and I'll guide you step by step.</div></div>
+          <div class="chat-input-row"><textarea class="chat-input" id="chatInput" rows="1" placeholder="Describe your issue..." onkeydown="handleChatKey(event)"></textarea><button class="chat-send" onclick="sendChat()"><i class="fas fa-paper-plane"></i></button></div>
         </div>
       </div>
-      <!-- DIVIDER -->
-      <div class="divider rv">
-        <div class="div-line">
-        </div>
-        <div class="div-lbl">
-          Stats
-        </div>
-        <div class="div-line">
-        </div>
-      </div>
-      <!-- STATS -->
-      <div class="sec-lbl rv">
-        <i class="fas fa-chart-bar"></i>
-        <span>        System Statistics
-</span>
-      </div>
+      <div class="divider rv"><div class="div-line"></div><div class="div-lbl">Stats</div><div class="div-line"></div></div>
+      <div class="sec-lbl rv"><i class="fas fa-chart-bar"></i><span>System Statistics</span></div>
       <div class="stats-card rv">
         <div class="stats-grid">
-          <div class="stat-box">
-            <div class="sbi" style="background:rgba(232,0,13,.12)">
-              <i class="fas fa-flag" style="color:#ff3340"></i>
-            </div>
-            <div class="sbn">
-              1.0K+
-            </div>
-            <div class="sbl">
-              Reports sent via this tool
-            </div>
-          </div>
-          <div class="stat-box">
-            <div class="sbi" style="background:rgba(0,200,83,.12)">
-              <i class="fas fa-shield-halved" style="color:#00c853"></i>
-            </div>
-            <div class="sbn">
-              340+
-            </div>
-            <div class="sbl">
-              Accounts successfully unbanned
-            </div>
-          </div>
-          <div class="stat-box">
-            <div class="sbi" style="background:rgba(255,180,0,.12)">
-              <i class="fas fa-clock" style="color:#ffb400"></i>
-            </div>
-            <div class="sbn">
-              48h
-            </div>
-            <div class="sbl">
-              Average WA response time
-            </div>
-          </div>
-          <div class="stat-box">
-            <div class="sbi" style="background:rgba(100,149,237,.12)">
-              <i class="fas fa-users" style="color:#6495ed"></i>
-            </div>
-            <div class="sbn">
-              2K+
-            </div>
-            <div class="sbl">
-              Community members
-            </div>
-          </div>
+          <div class="stat-box"><div class="sbi" style="background:rgba(232,0,13,.12)"><i class="fas fa-flag" style="color:#ff3340"></i></div><div class="sbn" id="reportCount">0</div><div class="sbl">Reports sent</div></div>
+          <div class="stat-box"><div class="sbi" style="background:rgba(0,200,83,.12)"><i class="fas fa-shield-halved" style="color:#00c853"></i></div><div class="sbn" id="appealCount">0</div><div class="sbl">Appeals sent</div></div>
+          <div class="stat-box"><div class="sbi" style="background:rgba(255,180,0,.12)"><i class="fas fa-clock" style="color:#ffb400"></i></div><div class="sbn" id="totalCount">0</div><div class="sbl">Total actions</div></div>
+          <div class="stat-box"><div class="sbi" style="background:rgba(100,149,237,.12)"><i class="fas fa-users" style="color:#6495ed"></i></div><div class="sbn">0</div><div class="sbl">Community members</div></div>
         </div>
       </div>
-      <!-- FOOTER -->
-      <div class="footer rv">
-        CREATED BY
-        <span>        DEV 𝑪𝒊𝒇𝒆𝒓
-</span>
-        <br />
-        <a href="https://t.me/Cvrisyvnis" style="color:var(--muted);text-decoration:none">        Telegram
-</a>
-        ·
-        <a href="https://youtube.com/@titanabel?si=BvTzIaLM1bMVj7a0" style="color:var(--muted);text-decoration:none">        YouTube
-</a>
-      </div>
+      <div class="footer rv">CREATED BY <span>DEV 𝑪𝒊𝒇𝒆𝒓</span><br /><a href="https://t.me/Cvrisyvnis" style="color:var(--muted);text-decoration:none">Telegram</a> · <a href="https://youtube.com/@titanabel?si=BvTzIaLM1bMVj7a0" style="color:var(--muted);text-decoration:none">YouTube</a></div>
     </div>
-    <!-- TOAST -->
-    <div class="toast" id="toast">
-    </div>
+    <div class="toast" id="toast"></div>
     <script>
-      // ─── SCROLL REVEAL ───
-const obs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});
-},{threshold:0.1});
+const obs = new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});},{threshold:0.1});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+function openMenu(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open');}
+function closeMenu(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open');}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
 
-// ─── MENU ───
-function openMenu(){
-  document.getElementById('drawer').classList.add('open');
-  document.getElementById('overlay').classList.add('open');
-}
-function closeMenu(){
-  document.getElementById('drawer').classList.remove('open');
-  document.getElementById('overlay').classList.remove('open');
-}
-
-// ─── TOAST ───
-function showToast(msg){
-  const t=document.getElementById('toast');
-  t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),3000);
-}
-
-// ─── MODE ───
 let mode='report';
+let reportCount=0;
+let appealCount=0;
+
+function updateStats(){
+  document.getElementById('reportCount').textContent=reportCount;
+  document.getElementById('appealCount').textContent=appealCount;
+  document.getElementById('totalCount').textContent=reportCount+appealCount;
+}
+
 function setMode(m){
   mode=m;
   document.getElementById('reportInfo').classList.remove('show');
   document.getElementById('appealInfo').classList.remove('show');
-
   const reportBtn=document.getElementById('reportBtn');
   const appealBtn=document.getElementById('appealBtn');
   const helpCard=document.getElementById('helpCard');
@@ -607,121 +423,62 @@ function setMode(m){
   const btnIcon=document.getElementById('btnIcon');
   const btnLabel=document.getElementById('btnLabel');
   const actionBtn=document.getElementById('actionBtn');
-
   if(m==='report'){
     document.body.className='';
-    reportBtn.classList.add('active');
-    appealBtn.classList.remove('active');
-    helpCard.style.display='none';
-    helpDivider.style.display='none';
+    reportBtn.classList.add('active');appealBtn.classList.remove('active');
+    helpCard.style.display='none';helpDivider.style.display='none';
     cardTitle.innerHTML='<i class="fas fa-flag"></i> Report a Number';
     cardDesc.textContent='Enter the number you want to report to WhatsApp. A genuine report email will be sent to WhatsApp support.';
-    btnIcon.className='fas fa-paper-plane';
-    btnLabel.textContent='SEND';
+    btnIcon.className='fas fa-paper-plane';btnLabel.textContent='SEND';
     actionBtn.style.background='linear-gradient(135deg,#e8000d,#9a0008)';
-    document.querySelector('.main-card::before');
   } else {
     document.body.className='green';
-    appealBtn.classList.add('active');
-    reportBtn.classList.remove('active');
-    helpCard.style.display='block';
-    helpDivider.style.display='flex';
+    appealBtn.classList.add('active');reportBtn.classList.remove('active');
+    helpCard.style.display='block';helpDivider.style.display='flex';
     cardTitle.innerHTML='<i class="fas fa-shield-halved"></i> Appeal Your Ban';
     cardDesc.textContent='Enter your banned WhatsApp number. A genuine unban appeal will be sent to WhatsApp support on your behalf.';
-    btnIcon.className='fas fa-shield-halved';
-    btnLabel.textContent='APPEAL';
+    btnIcon.className='fas fa-shield-halved';btnLabel.textContent='APPEAL';
     actionBtn.style.background='linear-gradient(135deg,#00c853,#006b2c)';
   }
 }
 
-// ─── SEND ───
 function handleSend(){
   const raw=document.getElementById('phoneInput').value.trim();
   if(!raw){showToast('Please enter a phone number');return;}
   const phone=raw.replace(/\D/g,'');
   if(phone.length<7){showToast('Please enter a valid number');return;}
-
   const to='support@whatsapp.com,smb_support@support.whatsapp.com';
-
   if(mode==='report'){
+    reportCount++;
+    updateStats();
     document.getElementById('reportInfo').classList.add('show');
     document.getElementById('appealInfo').classList.remove('show');
     const subject=encodeURIComponent('User Report: Suspicious Activity');
-    const body=encodeURIComponent(
-`Hello WhatsApp Support Team,
-
-I am writing to report a phone number for suspicious or harmful activity on the platform.
-
-Reported number: +${phone}
-
-I believe this account has been engaging in behavior that violates WhatsApp's Terms of Service, including [describe the behavior: spam / harassment / scam / etc.].
-
-I respectfully request that your team review this account and take appropriate action according to your policies.
-
-Thank you for your attention to this matter.`
-    );
-    setTimeout(()=>{ window.location.href=`mailto:${to}?subject=${subject}&body=${body}`; },400);
-    showToast('Opening email client...');
+    const body=encodeURIComponent('Hello WhatsApp Support Team,\n\nI am writing to report a phone number for suspicious or harmful activity.\n\nReported number: +'+phone+'\n\nI believe this account violates WhatsApp\'s Terms of Service.\n\nPlease review and take action.\n\nThank you.');
+    setTimeout(()=>{window.location.href='mailto:'+to+'?subject='+subject+'&body='+body;},400);
+    showToast('Report sent! Opening email...');
   } else {
+    appealCount++;
+    updateStats();
     document.getElementById('appealInfo').classList.add('show');
     document.getElementById('reportInfo').classList.remove('show');
     const subject=encodeURIComponent('Account Ban Appeal — Requesting Reinstatement');
-    const body=encodeURIComponent(
-`Hello WhatsApp Support Team,
-
-My name is [Your Name] and I am writing to appeal the ban placed on my WhatsApp account.
-
-Banned number: +${phone}
-
-I believe this ban was applied in error, as I have not knowingly violated WhatsApp's Terms of Service. I use this account for personal communication and it is very important to me.
-
-I respectfully request that your team review my account and reinstate it if no valid violation is found. I am happy to provide any additional information needed.
-
-Thank you for your time and consideration.`
-    );
-    setTimeout(()=>{ window.location.href=`mailto:${to}?subject=${subject}&body=${body}`; },400);
-    showToast('Opening appeal email...');
+    const body=encodeURIComponent('Hello WhatsApp Support Team,\n\nI am writing to appeal the ban on my account.\n\nBanned number: +'+phone+'\n\nI believe this ban was an error.\n\nPlease review and reinstate.\n\nThank you.');
+    setTimeout(()=>{window.location.href='mailto:'+to+'?subject='+subject+'&body='+body;},400);
+    showToast('Appeal sent! Opening email...');
   }
 }
-
-// ─── CHAT (Appeal Help) ───
-const helpResponses = [
-  "Make sure you send the appeal from the same email address linked to your WhatsApp account. This speeds up verification.",
-  "If your number was banned for the first time, WhatsApp usually reviews appeals within 24–48 hours. Be patient.",
-  "You can also try re-registering your number in the WhatsApp app — sometimes a temporary ban is lifted automatically after 24 hours.",
-  "Make sure to include your full phone number with country code in the appeal email for faster processing.",
-  "If you haven't received a reply in 72 hours, you can send a follow-up email to support@whatsapp.com referencing your original request.",
-  "Avoid sending multiple appeals for the same number — it can slow down the review process. One well-written appeal is enough.",
-  "Try the in-app 'Request a Review' button if available on your device. It's the fastest official channel.",
-];
-let helpIdx = 0;
-
+const helpResponses=["Make sure you send the appeal from the same email address linked to your WhatsApp account.","If your number was banned for the first time, WhatsApp usually reviews appeals within 24-48 hours.","You can also try re-registering your number in the WhatsApp app.","Make sure to include your full phone number with country code.","If you haven't received a reply in 72 hours, send a follow-up email.","Avoid sending multiple appeals.","Try the in-app 'Request a Review' button if available."];
+let helpIdx=0;
 function sendChat(){
   const inp=document.getElementById('chatInput');
   const area=document.getElementById('chatArea');
   const msg=inp.value.trim();
-  if(!msg) return;
-
-  const userDiv=document.createElement('div');
-  userDiv.className='chat-msg user-msg';
-  userDiv.textContent=msg;
-  area.appendChild(userDiv);
-  inp.value='';
-  area.scrollTop=area.scrollHeight;
-
-  setTimeout(()=>{
-    const botDiv=document.createElement('div');
-    botDiv.className='chat-msg bot';
-    botDiv.textContent=helpResponses[helpIdx%helpResponses.length];
-    helpIdx++;
-    area.appendChild(botDiv);
-    area.scrollTop=area.scrollHeight;
-  },700);
+  if(!msg)return;
+  const userDiv=document.createElement('div');userDiv.className='chat-msg user-msg';userDiv.textContent=msg;area.appendChild(userDiv);inp.value='';area.scrollTop=area.scrollHeight;
+  setTimeout(()=>{const botDiv=document.createElement('div');botDiv.className='chat-msg bot';botDiv.textContent=helpResponses[helpIdx%helpResponses.length];helpIdx++;area.appendChild(botDiv);area.scrollTop=area.scrollHeight;},700);
 }
-
-function handleChatKey(e){
-  if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}
-}
+function handleChatKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}}
     </script>
   </body>
-</html> 
+  </html>
